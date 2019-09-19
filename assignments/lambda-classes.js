@@ -26,6 +26,22 @@ class Instructor extends Person {
         console.log(`Today we are learning about ${subject}`);
     }
 
+    grade(student,subject) {
+        console.log(`${student.name} recieves a perfect score on ${subject}`);
+    }
+
+}
+
+// === Student Class === // 
+
+class Student extends Person {
+    constructor(attributes) {
+        super(attributes);
+        this.previousBackground = attributes.previousBackground;
+        this.className = attributes.className;
+        this.favSubjects = attributes.favSubjects;
+    }
+    
 
 
 
