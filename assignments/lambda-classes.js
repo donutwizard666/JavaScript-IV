@@ -41,10 +41,32 @@ class Student extends Person {
         this.className = attributes.className;
         this.favSubjects = attributes.favSubjects;
     }
-    
+    listsSubjects() {
+        console.log //not sure what to put here
+    }
+    PRAssignment(subject) {
+        console.log(`${student.name} has submitted a PR for ${subject}`);
+    }
+    sprintChallenge() {
+        console.log(`${student.name} has begun sprint challenge on ${subject}`);
+    }
+}
 
-
-
+class ProjectManager extends Instructor {
+    constructor(attributes) {
+        this.gradClassName = attributes.gradClassName;
+        this.favInstructor = attributes.favInstructor;
+    }
+    standUp(web24_lecture) {
+        console.log(`${name} announces to ${Web24_lecture}, @channel Stand Up time!`);
+    }
+    debugsCode(student) {
+        console.log(`${name} debugs ${student.name}'s code on ${subject}`);
+    }
 
 
 }
+
+
+// === Objects Here === //
+
